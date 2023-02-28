@@ -1,0 +1,124 @@
+.headerPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerPrincipal nav {
+  display: flex;
+}
+/* *-* */
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list {
+  width: 70%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+.rodapePrincipal-navMap-list {
+  height: 253px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenidoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.videoSobre-sobre-list{
+    justify-content: space-between;
+    flex-grow: 2;
+}
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*PARTE RESPONSIVA*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+@media (max-width: 768px) {
+
+  .headerPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .headerPrincipal nav {
+    flex-direction: column;
+  }
+
+  .contenidoPrincipal-cursos {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .rodapePrincipal-patrocinadores{
+    width: 100vw; 
+    height: 20vh;
+}
+
+  .rodapePrincipal-patrocinadores-list {
+    flex-direction: row;
+  }
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+  }
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+  .rodapePrincipal-patrocinadores-list {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  .headerPrincipal-nav-link-app{
+    order: -1;
+  }  
+
+  .videoSobre .container{
+    flex-direction: column;
+}
+
+}
